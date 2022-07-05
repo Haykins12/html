@@ -1,0 +1,24 @@
+h1 {
+  background-color: rgb(20, 150, 30);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 20%;
+}
+td {
+  border: 1px solid rgb(20, 20, 20);
+  padding: 10px;
+  text-align: left;
+}
+th {
+  text-align: left;
+  padding: 13px;
+}
+.head {
+  background-color: rgb(20, 150, 30);
+  color: #fff;
+}
+table {
+  border-collapse: collapse;
+}

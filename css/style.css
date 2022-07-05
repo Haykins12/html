@@ -1,0 +1,76 @@
+h1 {
+  background-color: rgb(0, 0, 255);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 100px;
+}
+h2 {
+  box-sizing: border-box;
+  text-align: center;
+  border: 4px dotted rgb(200, 0, 0);
+  padding: 10px;
+  margin-top: 30px;
+  border-left: 30px;
+  border-bottom-right-radius: 40px;
+}
+p {
+  font-size: 1.5em;
+  color: rgb(0, 0, 255);
+  border-radius: 30px;
+  font-weight: 100px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.lorem {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border: 4px solid rgb(0, 20, 150);
+  padding: 20px;
+  text-align: justify;
+  background-color: rgb(0, 150, 255);
+}
+a,
+img {
+  display: block;
+  margin: 0px auto;
+}
+.beans {
+  color: #3350ff;
+}
+.chapters a {
+  background-color: transparent;
+  color: black;
+  text-transform: capitalize;
+  font-size: 22px;
+  margin: 0px 10px;
+  padding: 8px 12px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.chapters a:hover {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
+.chapters {
+  display: flex;
+  justify-items: center;
+  margin-bottom: 500px;
+}
+.words {
+  padding: 25px;
+}
+
+.words p {
+  font-size: larger;
+}
+
+.words p::odd {
+  background-color: #fff;
+}

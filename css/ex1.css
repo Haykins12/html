@@ -1,0 +1,28 @@
+h2 {
+  padding: 0px;
+  /* font-size: 30px; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: -50px;
+  border: 2px solid black;
+  color: blue;
+}
+table {
+  border: 2px solid #000;
+  border-collapse: collapse;
+  width: 700px;
+  height: 600px;
+  color: white;
+}
+img {
+  width: 130px;
+  border-radius: 30px;
+}
+th,
+td {
+  border: 10px solid #fff;
+  padding: 5px;
+  text-align: center;
+  background-color: #2088ff;
+  border-radius: 25px;
+}

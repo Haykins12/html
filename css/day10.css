@@ -1,0 +1,30 @@
+table,
+th,
+td {
+  border: 1px solid #000;
+  padding: 5px;
+}
+table {
+  width: 500px;
+  border-collapse: collapse;
+  text-align: left;
+  /* border-spacing: 10px; */
+}
+.head {
+  background-color: rgb(10, 100, 250);
+  color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+th {
+  border-color: rgb(10, 100, 250);
+}
+/* td:nth-child(even) {
+  background-color: bisque;
+} */
+th,
+td {
+  border-bottom: 1px solid #000;
+}
+td:hover {
+  background-color: aqua;
+}

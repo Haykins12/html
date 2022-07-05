@@ -1,0 +1,22 @@
+.Order {
+  background-color: rgb(220, 220, 220);
+  padding: 20px;
+}
+
+.first {
+  padding: 20px;
+  background-color: rgb(200, 200, 200);
+}
+li,
+dt,
+dd {
+  font-size: 22px;
+}
+.part {
+  background-color: rgb(200, 200, 200);
+  padding: 20px;
+}
+hr {
+  background-color: #fff000;
+  padding: 2px;
+}

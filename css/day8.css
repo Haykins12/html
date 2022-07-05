@@ -1,0 +1,24 @@
+body {
+  font-size: 12px;
+  text-align: justify;
+  padding-left: 30px;
+  background-image: url("../images/cat-2.jpeg");
+  background-attachment: scroll;
+  background-size: cover;
+}
+p {
+  font-size: 20px;
+  background-image: url("../images/architect1.jpeg");
+}
+a {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 13px 25px;
+  /* border: 2px dotted rgb(0, 50, 220); */
+}
+a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 77, 0);
+  border-radius: 25px;
+  color: blue;
+}

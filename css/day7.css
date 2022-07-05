@@ -1,0 +1,23 @@
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: rgb(220, 0, 130);
+}
+
+a:visited {
+  background-color: rgb(150, 10, 250);
+  font-size: 2em;
+  color: whitesmoke;
+  display: inline-block;
+}
+a:hover {
+  font-size: 20px;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+a:active {
+  color: rgb(44, 200, 150);
+  margin: 15px;
+  padding: 15px 25px;
+}
