@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Form Document</title>
+    <link rel="stylesheet" href="./css/create.css">
+</head>
+<body>
+    <h2>What's Your name?</h2>
+    <p>Enter the name you use in real life.</p>
+    <form>
+ <label for="fname">First name</label><br>
+ <input type="text" id="fname" name="fname">
+ <label for="sname">Surname</label>
+ <input type="text" id="sname" name="sname"><br><br>
+ <input class="nex" type="submit" value="Next">
+    </form><br>
+    <form>
+        <h2>Sign in</h2>
+ <label for="pn">Phone number</label><br>
+ <input class="pwd" type="text" id="pn" name="pn" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678"><br>
+ <label for="ps">Password</label><br>
+ <input class="bn" type="password" id="ps" name="ps"><br><br>
+ <a href="">Forgot Password</a><br><br>
+ <input class="ss" type="submit" value="Sign in">
+    </form><br>
+    <h2>Select a radio and click on submit.</h2>
+    <form>
+        <div>Gender:</div>
+ <label for="male">Male <input class="pad" type="radio" id="male" name="gender" value="fmale">
+<br></label>
+ <label for="fmale">Female <input type="radio" id="fmale" name="gender" value="fmale">
+<br></label>
+ <label for="other">Others <input class="oth" type="radio" id="other" name="gender" value="other">
+<br></label>
+ <input type="submit" value="submit">
+ <p>Selected Radio button Value: (Male)</p>
+    </form><br>
+    <h2>Subscribe via Email</h2>
+    <form>
+ <label for="marketing"><input type="checkbox" id="marketing" name="marketing" value="marketing">Marketing<br></label>
+ <label for="sales"><input type="checkbox" id="sales" name="sales" value="marketing">Sales<br></label>
+ <label for="website"><input type="checkbox" id="website" name="website" value="markwebsite">Website<br></label>
+ <label for="service"><input type="checkbox" id="service" name="service" value="marketing">Service<br></label>
+ <input type="submit" value="Next">
+    </form><br>
+    <h2>Enter email address</h2>
+    <p>We'll email you a code to verify your email.</p>
+    <form>
+ <label for="email">Email address</label><br>
+ <input type="email" id="email" name="email" placeholder="Email address"><br><br>
+ <input type="submit" value="Send code"><br> <br>
+ <div>Can't verify your email?<a href="">Use phone</a></div>
+    </form><br>
+    <P>Hello World!</P>
+</body>
+</html>

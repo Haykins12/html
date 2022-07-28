@@ -1,0 +1,13 @@
+body{
+    background-image: url("../images/girl.jpeg ");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right top;
+    /* margin: 0 100px; */
+    background-attachment: fixed;
+}
+h1{
+    /* border: 10px solid blue; */
+    border-left: 5px solid red;
+    background-color: aqua;
+}

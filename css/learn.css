@@ -1,0 +1,20 @@
+body{
+    background-image: url(../images/foodpic.jpeg);
+    background-repeat: repeat-x;
+}
+h1{
+    background-color: blue;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+}
+.lig{
+    opacity: 0.7;
+    background-image: url(../images/gummy-bears.jpeg);
+    color: #000;
+}
+.lit{
+    opacity: 0.5;
+    background-image: url(../images/gummy-bears.jpeg);
+    color: #000;
+}
