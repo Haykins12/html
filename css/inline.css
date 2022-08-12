@@ -1,0 +1,25 @@
+a{
+    display: block;
+}
+aside{
+    display: inline;
+}
+h2{
+    margin: 0;
+}
+.hidden{
+    display: none;
+}
+.hid{
+    visibility: hidden;
+}
+.width{
+    width: 500px;
+    border: 2px solid darkgreen;
+    margin: auto;
+}
+.max{
+    max-width: 500px;
+    border: 2px solid darkgreen;
+    margin: auto;
+}
