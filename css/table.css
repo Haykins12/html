@@ -1,0 +1,30 @@
+table {
+  width: 500px;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+.head {
+  background-color: darkgreen !important;
+  color: #fff;
+  text-align: left;
+}
+th,
+td {
+  padding: 10px;
+  text-transform: capitalize;
+}
+tr:nth-child(odd) {
+    background-color: gainsboro;
+}
+tr:nth-child(even) td:nth-child(odd){
+    background-color: darkgreen;
+    color: #fff;
+}
+tr:nth-child(odd) td:nth-child(2){
+    background-color: blue;
+    color: #fff;
+}
+::selection{
+    background-color: rgb(238, 255, 0);
+    color: #fff;
+}

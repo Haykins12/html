@@ -1,0 +1,29 @@
+.tip {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+  }
+  .tool:hover p.tip {
+    display: block;
+  }
+  p.intro::first-letter {
+      color: #ff0000;
+      font-size: 200%;
+  }
+  .first::first-letter {
+      color: #ff0000;
+      font-size: xx-large; 
+    }
+    
+    .first::first-line {
+      color: #0000ff;
+      font-variant: small-caps;
+    }
+    .gif{
+      content: url(../images/gummy-bears.jpeg);
+      height: 50px;
+    }
+    ::marker { 
+      color: red;
+      font-size: 25px;
+    }

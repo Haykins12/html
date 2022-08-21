@@ -1,0 +1,25 @@
+.lorem{
+    border: 3px solid green;
+    padding: 5px;
+    overflow: hidden;
+}
+.img1{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.center{
+height: 200px;
+border: 3px solid green;
+justify-content: center;
+align-items: center;
+display: flex;
+/* line-height: 50%; */
+}
+div +p{
+    background-color: blue;
+    color: #fff;
+}

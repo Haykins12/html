@@ -1,0 +1,46 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.parent {
+  list-style-type: none;
+  background-color: #ddd;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.parent li {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.parent li a {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.droplink,
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 17px;
+}
+.dropdown {
+}
+.content {
+  width: 150px;
+  top: 100px;
+  /* display: none; */
+  position: absolute;
+  background-color: #f9f9f9;
+  color: #000;
+  min-width: 160px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.content a {
+  display: block;
+}

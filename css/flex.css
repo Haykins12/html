@@ -1,0 +1,44 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.parent {
+  display: inline-block;
+  background-color: #ddd;
+  width: 50%;
+  padding: 0;
+}
+button {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  border: none;
+  margin: 20px;
+  width: 80px;
+  padding: 8px 0;
+  text-align: center;
+  background-color: green;
+  color: #fff;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.all {
+  margin: 50px;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid rgb(240, 240, 240);
+  display: flex;
+  background-image: linear-gradient(45deg, pink, orange, gold, red);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all:hover {
+  box-shadow: 1px 4px 10px 0px rgba(255, 0, 0, 0.2);
+}
