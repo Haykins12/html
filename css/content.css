@@ -1,0 +1,14 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.par {
+  width: 350px;
+  background-color: gainsboro;
+}
+p.inline {
+  display: inline;
+}

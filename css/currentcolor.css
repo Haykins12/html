@@ -1,0 +1,22 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.all {
+  color: rgb(217, 0, 217);
+}
+.hex {
+  color: #d900d9;
+}
+#current {
+  margin: 20px;
+  box-shadow: 0px 0px 15px currentcolor;
+  border: 5px solid currentcolor;
+  padding: 15px;
+}
+.shadow {
+  text-shadow: 2px 2px 4px black;
+}

@@ -1,0 +1,89 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.par {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#border {
+  width: 400px;
+  border: 2px solid rgba(150, 0, 200, 1);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  font-size: 14px;
+  color: rgb(100, 100, 100);
+}
+.std {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(150, 0, 200, 0.1);
+  color: rgba(150, 0, 200, 1);
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.dollar {
+  text-align: right;
+  width: 100%;
+}
+.dollar span.number {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgba(150, 0, 200, 1);
+}
+sup {
+  margin-top: -15px;
+  display: inline-block;
+}
+ul {
+  list-style-position: inside;
+  font-weight: medium;
+  color: rgb(100, 100, 100);
+  margin-bottom: 10px;
+}
+::marker {
+  padding: 0px;
+  color: rgb(100, 100, 100);
+  margin: 0;
+}
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+.lite {
+  width: 100%;
+  padding: 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 7px 0px;
+  background-color: rgba(150, 0, 200, 0.1);
+}
+.line {
+  height: 7px;
+  width: 85%;
+  background-color: rgba(150, 0, 200, 1);
+}
+button {
+  width: 100%;
+  background-color: rgba(150, 0, 200, 1);
+  border: 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 0px;
+  margin-top: 7px;
+}

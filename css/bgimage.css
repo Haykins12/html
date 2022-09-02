@@ -1,0 +1,15 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#example1 {
+  width: 40%;
+  border: 10px solid transparent;
+  border-image: url(../images/gummy-bears.jpeg) 30% round;
+  background-repeat: repeat;
+  background-position: right bottom, left top;
+  padding: 20px;
+}
