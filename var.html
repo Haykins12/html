@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable js</title>
+    <link rel="stylesheet" href="./css/var.css">
+</head>
+
+<body>
+    <div class="all">
+        <input type="number" placeholder="firstnumber" id="fnumber">
+        <input type="number" placeholder="secondnumber" id="snumber">
+        <button type="button" onclick="addNumber()" id="add">Add</button>
+        <p id="box"></p>
+    </div>
+    <p id="demo"></p>
+
+    <script>
+        var x = 2;
+        // Now x is 2
+
+        var x = 3;
+        // Now x is 3
+
+        document.getElementById("demo").innerHTML = x;
+    </script>
+    <script src="./js/var.js"></script>
+</body>
+
+</html>
