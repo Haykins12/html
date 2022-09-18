@@ -4,10 +4,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+:root {
+  --green: #009678;
+  --lightgreen: #f4fff4;
+  --white: #fff;
+  --fade-yellow: #ffffb3;
 }
 .nav {
   width: 100%;
-  background-color: gainsboro;
 }
 .bar {
   display: flex;
@@ -17,25 +24,219 @@
   text-align: center;
   font-size: 14px;
   font-weight: 500;
-  color: #fff;
-  background-color: rgb(0, 150, 120);
+  color: var(--white);
+  background-color: var(--green);
 }
-.whatsapp {
+.whatsapps {
   padding-left: 30px;
 }
 .fa-whatsapp {
   font-size: 20px;
   color: #fff;
-  background-color: green;
+  background-color: var(--green);
+}
+.logo {
+  text-decoration: none;
+  color: var(--white);
 }
 #flex {
   text-align: center;
   list-style-type: none;
   display: flex;
   /* column-gap: 12px; */
+  flex-wrap: wrap;
   align-items: center;
   font-size: 12px;
 }
 #flex li {
-  padding: 10px;
+  padding: 20px;
+  float: left;
+  color: var(--white);
+}
+select {
+  width: 50px;
+  color: var(--white);
+  border: 1px solid var(--green);
+  background-color: var(--green);
+}
+.macs {
+  font-size: 20px;
+  padding: 25px;
+  font-weight: 500;
+}
+.phone {
+  width: 80px;
+  background-color: var(--green);
+  padding: 7px 10px;
+  color: var(--white);
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+  transition-timing-function: linear;
+}
+@keyframes move {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 140px;
+  }
+}
+
+.phone:hover {
+  color: #009678;
+  background-color: var(--white);
+  border: 2px solid var(--green);
+  font-weight: 500;
+}
+.pic {
+  width: 350px;
+}
+.bg-parent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--white);
+}
+.bg-green {
+  background-color: #f4fff4;
+}
+.bg-green,
+.bg-pc {
+  width: 49.5%;
+  text-align: center;
+  padding: 25px 0;
+  /* height: 100%; */
+}
+.bg-pc {
+  background-color: var(--fade-yellow);
+  padding: 25px 0;
+}
+.os {
+  font-size: 13px;
+  margin: 10px;
+}
+.OS {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  box-shadow: 2px 4px 10px 0 var(--white), 1px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.OS:hover {
+  color: var(--green);
+  background-color: var(--white);
+  border: 2px solid var(--green);
+  font-weight: 500;
+}
+li a {
+  text-decoration: none;
+  color: var(--white);
+}
+.link {
+  text-decoration: none;
+  color: #01d;
+}
+.navs {
+  color: var(--white);
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+#flex-phone {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  animation: move 7s infinite;
+  animation-fill-mode: backwards;
+}
+.image {
+  width: 300px;
+  height: 400px;
+  display: block;
+  margin-bottom: -25px;
+}
+.image:hover {
+  /* opacity: 0.7; */
+}
+.bit {
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+.byte {
+  margin: 5px 0;
+}
+.vist {
+  font-size: 14px;
+}
+.by {
+  font-size: 12px;
+  margin-top: 7px;
+}
+#footer {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: var(--white);
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+}
+.container:first-child {
+  background-color: #101020;
+}
+.container:nth-child(2) {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.container div {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  padding: 0 10px;
+  /* align-items: center; */
+}
+@media only screen and (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+.whatsapp {
+  padding: 35px 0;
+}
+.features {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin-bottom: 7px;
+}
+
+@media screen and(min-width: 1150px) {
+  .flex {
+    padding: 0;
+  }
 }

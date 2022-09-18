@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism</title>
+    <link rel="stylesheet" href="../css/neumorphic.css">
+</head>
+
+<body>
+    <div id="all" class=".all">
+        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+        <li>
+            <a href="#">
+                <span class="fab fa-twitter"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="fab fa-instagram">
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="fab fa-github">
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="fab fa-youtube">
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="fab fa-whatsapp">
+                </span>
+            </a>
+        </li>
+    </div>
+    <script src="../js/all.js"></script>
+    <script>
+        const list = document.querySelectorAll('li');
+        for (let i = 0; i < list.length; i++) {
+            list[i].onclick = function () {
+                this.classList.toggle('active');
+            }
+        }
+    </script>
+</body>
+
+</html>

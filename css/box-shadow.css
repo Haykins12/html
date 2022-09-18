@@ -1,0 +1,96 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+/* Box shadow start here */
+.container {
+  background-color: #dde1e7;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: -4px -4px 8px #ffffff95, 3px 3px 6px rgba(94, 104, 121, 0.288);
+  margin: 0 30px;
+}
+.containers {
+  background-color: #000;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: inset -4px -4px 8px #ffffff95,
+    inset 3px 3px 6px rgba(94, 104, 121, 0.288);
+}
+.parent {
+  background-color: #dde1e7;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container ul {
+  flex: 1;
+}
+.container ul li {
+  text-decoration: none;
+  display: inline-flex;
+  background-color: #fff;
+  padding: 8px 12px;
+  text-align: center;
+  box-shadow: inset -4px -4px 8px #cccccc90,
+    inset 3px 3px 6px rgba(94, 104, 121, 0.5);
+  border-radius: 5px;
+}
+.containers ul li {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  background-color: #000;
+  padding: 8px 12px;
+  text-align: center;
+  box-shadow: -4px -4px 8px #cccccc50, 3px 3px 6px rgba(94, 104, 121, 0.2);
+  border-radius: 5px;
+  font-weight: 500;
+}
+/* Box shadown end here */
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.round {
+  clear: both;
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  box-shadow: -4px -4px 8px #cccccc50, 3px 3px 6px rgba(94, 104, 121, 0.2);
+  border-radius: 50%;
+}
+.round ul {
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -4px -4px 8px #cccccc90,
+    inset 3px 3px 6px rgba(94, 104, 121, 0.5);
+  border-radius: 50%;
+}
+.round ul li {
+  list-style-type: none;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div.w-full {
+  width: 100%;
+}
