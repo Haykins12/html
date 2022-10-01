@@ -1,0 +1,105 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+:root {
+  --primary: blue;
+  --secondary: white;
+}
+@font-face {
+  font-family: roboto;
+  src: url(../font/RobotoCondensed-Regular.ttf);
+}
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+header {
+  width: 100%;
+  background-color: var(--primary);
+  padding: 15px 0;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.page,
+button {
+  display: inline-block;
+}
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  flex-direction: column;
+  min-width: 100%;
+}
+/* header nav ul li {
+  margin-left: 25px;
+  padding: 20px 30px;
+} */
+header nav ul li a {
+  display: inline-block;
+  padding: 20px 0;
+}
+button {
+  border: none;
+  color: var(--secondary);
+  background-color: var(--primary);
+  cursor: pointer;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 800px) {
+  #toggle {
+    display: none;
+  }
+  .hidden {
+    display: flex;
+  }
+  ul {
+    flex-direction: row;
+    min-width: max-content;
+  }
+  nav {
+    flex-wrap: nowrap;
+  }
+  .container {
+    max-width: 700px;
+  }
+  header {
+    padding: 0;
+  }
+  header nav ul li a {
+    margin-left: 25px;
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 980px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1100px;
+  }
+}
