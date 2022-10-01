@@ -1,0 +1,48 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"); */
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Bungee Spice";
+  src: url(../font/BungeeSpice-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../font/RobotoCondensed-BoldItalic.ttf);
+}
+
+div {
+  font-family: "Bungee Spice", cursive;
+}
+h1 {
+  font-family: "Bungee Spice", cursive;
+
+  font-weight: 700;
+}
+h2 {
+  font-family: "Bungee Spice", cursive;
+  font-weight: 400;
+}
+h3 {
+  font-family: "Bungee Spice", cursive;
+  font-weight: 300;
+}
+h4 {
+  font-family: "roboto";
+  font-weight: 600;
+}
+p {
+  background: linear-gradient(blue, white);
+  -webkit-background-clip: text;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 1),
+    1px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-text-fill-color: transparent;
+}

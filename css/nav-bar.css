@@ -1,0 +1,37 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: white;
+  --secondary: rgba(0, 200, 50, 1);
+  --font: 25x;
+}
+.bar-container {
+  display: flex;
+}
+div a {
+  width: 80px;
+  display: block;
+  background-color: #000;
+  font-size: 30px;
+  padding: 20px 0;
+  color: var(--primary);
+  text-align: center;
+}
+div a:first-child {
+  background-color: var(--secondary);
+}
+div a:hover {
+  background-color: #eee;
+  color: var(--secondary);
+  transition: all 1s;
+}
+@media screen and (max-width: 600px) {
+  .bar-container {
+    flex-direction: column;
+  }
+}

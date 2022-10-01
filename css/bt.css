@@ -1,0 +1,12 @@
+:root {
+    --tertiary: #01d;
+    --primary: #ffc636;
+    --secondary: #0a0b5b;
+    --gray: #eee;
+    --font: sans-serif;
+    --fs: 14px --sm: 600px;
+    --md: 800px;
+    --lg: 1024px;
+    --xl: 1240px;
+    --xxl: 1560px;
+}
