@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <style>
+        *,
+        ::after,
+        ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+            font-family: sans-serif;
+            width: 350px;
+            margin: 0 auto;
+        }
+
+        .all {
+            max-width: 100%;
+            padding: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .img-bg {
+            width: 50px;
+            height: 50px;
+            background-color: #eee;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+        }
+
+        .float {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header {
+            /* display: flex; */
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .fade {
+            color: rgba(37, 35, 35, 0.849);
+        }
+
+        .scale {
+            margin: 15px 0;
+            font-weight: 500;
+        }
+
+        .container {
+            background: url(./images/background.jp.png);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contained {
+            background: rgba(255, 255, 255, 0.09);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .text {
+            background: rgba(255, 255, 255, 0.3);
+            /* opacity: 0.7; */
+            padding: 5px;
+            font-style: italic;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .date {
+            padding-top: 15px;
+            font-size: 14px;
+        }
+
+        .link {
+            font-size: 12px;
+            padding-top: 7px;
+        }
+
+        .white {
+            color: #fff;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #ff0000;
+        }
+
+        .verse {
+            font-size: 12px;
+            color: #000;
+            position: absolute;
+            top: 85px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <header>
+            <div class="img-bg">
+                <img src="./images/Bananas.jpeg" alt="Picture">
+            </div>
+            <div class="float">
+                <div>
+                    <p class="bold">Bowofade Oyerinde</p>
+                    <p class="fade">@fade_networker</p>
+                </div>
+                <span><i style="color: blue; " class="fa-brands fa-twitter fa-2x"></i></span>
+            </div>
+        </header>
+        <p class="scale">You will definitely scale through.</p>
+        <main class="container">
+            <div class="contained">
+                <div class="text">""I have told you these things, so that in me you may have
+                    peace. In this world you will have trouble. But take
+                    heart! I have overcome the world.""
+                    <p class="verse">.John 16:33 </p>
+                </div>
+                <p class="link white">Made with love by Bowofade with <a class="link" href="">@TailwindCSS</a></p>
+            </div>
+        </main>
+        <p class="date">4 oct 2022.06:44</p>
+    </div>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

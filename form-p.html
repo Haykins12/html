@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Password</title>
+    <style>
+        form {
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        .icon {
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            font-size: 14px;
+        }
+
+        .border {
+            position: relative;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        input {
+            padding: 0 10px;
+            height: 30px;
+            border: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="password">Password</label><br>
+        <div class="border">
+            <input id="password" type="password" placeholder="password">
+            <i onclick="togglePassword()" id="show" class="icon fa-solid fa-eye"></i>
+            <i onclick="togglePassword()" id="hide" class="icon fa-solid fa-eye-slash"></i>
+        </div><br>
+
+        <label for="password">Password</label><br>
+        <div class="border">
+            <input type="password" placeholder="password">
+            <i class="icon fa-solid fa-eye-slash"></i>
+
+        </div>
+    </form>
+    <script src="./js/all.js">
+    </script>
+    <script>
+        var password = true;
+        var hide = document.querySelector('#show');
+        var show = document.querySelector('#hide');
+        show.style.display = "none";
+        var password = document.querySelector('#password');
+        function togglePassword() {
+            if (password) {
+                password = false;
+                hide.style.display = "none";
+                show.style.display = "flex";
+                alert(password);
+            } else {
+                password = true;
+                hide.style.display = "block";
+                show.style.display = "none";
+                alert(password);
+            }
+        }
+    </script>
+</body>
+
+</html>

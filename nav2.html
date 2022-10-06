@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        *,
+        ::after,
+        ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: roboto;
+        }
+
+        @font-face {
+            font-family: roboto;
+            src: url(./font/RobotoCondensed-Regular.ttf);
+        }
+
+        header {
+            width: 100%;
+            background-color: #01b;
+        }
+
+        header nav {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+
+        header nav ul,
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header nav ul {
+            width: 100%;
+            display: none;
+        }
+
+        header nav ul a {
+            padding: 10px 0;
+            display: inline-block;
+            transition: all 0.5s;
+        }
+
+        header nav button i {
+            display: none;
+        }
+
+        header nav button {
+            background-color: #01b;
+            outline: 0;
+            border: none;
+            color: #fff;
+        }
+
+        header nav .page {
+            font-size: 20px;
+        }
+
+        header nav ul li a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        .toggle {
+            display: block;
+        }
+
+        @media (min-width:580px) {
+            header nav {
+                max-width: 97%;
+                font-size: 16px;
+
+            }
+
+            header nav ul {
+                display: flex;
+                max-width: fit-content;
+            }
+
+            button {
+                display: none;
+            }
+
+            header nav ul a {
+                padding-right: 15px;
+            }
+        }
+
+        @media (min-width:600px) {
+            header nav {
+                max-width: 95%;
+                font-size: 16px;
+            }
+
+            header nav ul {
+                display: flex;
+            }
+
+            button {
+                display: none;
+            }
+
+            header nav ul a {
+                padding-right: 15px;
+            }
+
+            .toggle {
+                display: flex;
+            }
+
+            #click {
+                display: none;
+            }
+        }
+
+        @media (min-width:1024px) {
+            header nav {
+                max-width: 90%;
+            }
+        }
+
+        @media (min-width:1280px) {
+            header nav {
+                max-width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a class="page" href="">Pagination</a>
+            <button onclick="pressOn()" id="click"><i class="fa-solid fa-bars fa-2x"></i></button>
+            <ul id="navigation" class="toggle">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function pressOn() {
+            var menu = document.querySelector('#navigation');
+            menu.classList.toggle('toggle');
+            console.log('hi')
+        }
+    </script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

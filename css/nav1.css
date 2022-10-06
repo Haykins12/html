@@ -1,0 +1,96 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../font/RobotoCondensed-Regular.ttf);
+}
+
+header {
+    background-color: #01d;
+    width: 100%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: roboto;
+    padding: 12px 0;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    list-style-type: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+.toggle {
+    display: block;
+}
+
+button {
+    background-color: #01d;
+    border: none;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width:580px) {}
+
+@media (min-width:800px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .toggle {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        max-width: max-content;
+    }
+
+    #click {
+        display: none;
+    }
+
+    ul li a {
+        margin-left: 25px;
+
+    }
+}
+
+@media (min-width:1024px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (min-width:1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
